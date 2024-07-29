@@ -1,0 +1,163 @@
+/* الأساسيات */
+html, body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #f4f4f4;
+   color: #333;
+   padding-bottom: 70px; /* مساحة إضافية لتجنب التداخل مع الفوتر الثابت */
+   box-sizing: border-box;
+}
+
+/* رأس الصفحة */
+header {
+   background-color: #4682b4;
+   color: white;
+   padding: 20px;
+   text-align: center;
+}
+
+.logo {
+   width: 120px;
+   height: auto;
+   margin-bottom: 10px;
+}
+
+nav {
+   display: flex;
+   justify-content: center;
+   background-color: #87cefa;
+   padding: 10px 0;
+   margin-bottom: 20px;
+}
+
+nav a {
+   margin: 0 15px;
+   text-decoration: none;
+   color: #333;
+   font-size: 18px;
+   transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+   color: #fff;
+   transform: scale(1.1);
+}
+
+/* المحتوى الرئيسي */
+main {
+   padding: 20px;
+   max-width: 1200px;
+   margin: 0 auto;
+   margin-bottom: 80px; /* مساحة لتجنب التداخل مع الفوتر الثابت */
+}
+
+.intro {
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.intro h2 {
+   font-size: 32px;
+   color: #4682b4;
+   margin-bottom: 20px;
+}
+
+.intro p {
+   line-height: 1.6;
+   margin: 15px 0;
+   font-size: 20px;
+   color: #666;
+}
+
+/* صفحة القديسين */
+.saints {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 20px;
+}
+
+.saints img {
+   max-width: 100%;
+   height: auto;
+   margin-bottom: 20px;
+}
+
+.saints h2 {
+   font-size: 32px;
+   color: #4682b4;
+   margin-bottom: 20px;
+}
+
+.saints p {
+   font-size: 20px;
+   color: #666;
+   line-height: 1.6;
+   margin-bottom: 20px;
+}
+
+/* بطاقة القديسين */
+.card {
+   background-color: white;
+   border: 1px solid #ddd;
+   border-radius: 12px;
+   padding: 20px;
+   margin: 15px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   width: 300px;
+   text-align: center;
+   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+   width: 100%;
+   border-radius: 12px;
+   margin-bottom: 15px;
+}
+
+.card h3 {
+   margin: 10px 0;
+   font-size: 22px;
+   color: #4682b4;
+}
+
+.card p {
+   font-size: 16px;
+   color: #666;
+}
+
+.card:hover {
+   transform: scale(1.05);
+   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* تذييل الصفحة */
+footer {
+   background-color: #4682b4;
+   color: white;
+   text-align: center;
+   padding: 5px 0; /* تقليص حجم الفوتر */
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+   z-index: 1000;
+}
+
+/* قسم الفيديو */
+.video-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+video {
+    width: 40%;
+    max-width: 400px; /* تحديد عرض أقصى للفيديو */
+    height: 40%; /* الحفاظ على نسبة العرض إلى الارتفاع */
+}
